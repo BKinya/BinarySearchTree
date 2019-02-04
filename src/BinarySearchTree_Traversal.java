@@ -58,15 +58,6 @@ class BinarySearchTree_Traversal {
         postorderRecursion(root);
     }
 
-    //postorder traversal
-    private void postorderRecursion(Node root) {
-        if (root!=null){
-            postorderRecursion(root.left);
-            postorderRecursion(root.right);
-            System.out.print(root.key+"\t");
-        }
-
-    }
 
     // A utility function to do inorder traversal of BST
     void inorderRec(Node root) {
@@ -87,6 +78,17 @@ class BinarySearchTree_Traversal {
         }
 
     }
+
+    //postorder traversal
+    private void postorderRecursion(Node root) {
+        if (root!=null){
+            postorderRecursion(root.left);
+            postorderRecursion(root.right);
+            System.out.print(root.key+"\t");
+        }
+
+    }
+
 
 
     public static void main(String[] args) {
