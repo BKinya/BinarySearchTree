@@ -63,7 +63,7 @@ public class BalancedBST {
         BalancedBST balancedBST = new BalancedBST();
 
         //a sorted array
-        int[] numArray = new int[]{10, 20, 25, 30, 40, 50, 60, 70, 80, 90};
+        int[] numArray = new int[]{5, 6, 7, 8, 10};
 
         root = balancedBST.sortedArrayToBST(numArray, 0, numArray.length-1);
 
