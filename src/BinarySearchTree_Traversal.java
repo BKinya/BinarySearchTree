@@ -46,8 +46,9 @@ class BinarySearchTree_Traversal {
         return root;
     }
 
-    // This method mainly calls InorderRec()
+    //wrappers over the recursive methods
     void inorder() {
+
         inorderRec(root);
     }
     void preorder(){
@@ -57,6 +58,7 @@ class BinarySearchTree_Traversal {
         postorderRecursion(root);
     }
 
+    //postorder traversal
     private void postorderRecursion(Node root) {
         if (root!=null){
             postorderRecursion(root.left);
@@ -76,6 +78,7 @@ class BinarySearchTree_Traversal {
         }
     }
 
+    //preorder traversal
     void preorderRecursion(Node root){
         if (root!=null){
             System.out.print(root.key +"\t");
@@ -85,7 +88,7 @@ class BinarySearchTree_Traversal {
 
     }
 
-    // Driver Program to test above functions
+
     public static void main(String[] args) {
         BinarySearchTree_Traversal tree = new BinarySearchTree_Traversal();
 
